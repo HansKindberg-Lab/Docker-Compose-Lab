@@ -10,9 +10,7 @@
 		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
 	</ItemGroup>
 	<ItemGroup>
-		<!--
-		<Content Remove="Properties\LaunchSettings.json" />
-		<None Include="Properties\LaunchSettings.json" />
-		-->
+		<Content Remove="AppSettings.json;AppSettings.*.json" />
+		<None Include="AppSettings.json;AppSettings.*.json" />
 	</ItemGroup>
 </Project>

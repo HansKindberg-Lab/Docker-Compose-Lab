@@ -9,10 +9,10 @@
 		<ProjectVersion>2.1</ProjectVersion>
 	</PropertyGroup>
 	<ItemGroup>
+		<None Include=".dockerignore" />
+		<None Include="Docker-Compose.yml" />
 		<None Include="Docker-Compose.Override.yml">
 			<DependentUpon>Docker-Compose.yml</DependentUpon>
 		</None>
-		<None Include="Docker-Compose.yml" />
-		<None Include=".dockerignore" />
 	</ItemGroup>
 </Project>
