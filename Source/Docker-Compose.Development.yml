@@ -1,0 +1,24 @@
+version: "3.7"
+
+configs:
+  my_config:
+    file: ./Application/AppSettings.json
+  my_other_config:
+    external: true
+
+services:
+  application:
+    configs:
+      - my_config
+      - my_other_config
+    container_name: "DockerComposeLabApplication-development"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    image: "docker-compose-lab-application-development:dev"
+    ports:
+      - "8099:80"
+      - "44399:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

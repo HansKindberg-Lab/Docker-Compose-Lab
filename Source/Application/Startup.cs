@@ -40,7 +40,7 @@ namespace Application
 				applicationBuilder.UseHsts();
 			}
 
-			applicationBuilder.UseHttpsRedirection();
+			//applicationBuilder.UseHttpsRedirection();
 			applicationBuilder.UseStaticFiles();
 			applicationBuilder.UseRouting();
 			applicationBuilder.UseAuthorization();
