@@ -32,6 +32,11 @@ namespace Application.Controllers
 
 		#region Methods
 
+		public virtual async Task<IActionResult> Certificate()
+		{
+			return await Task.FromResult(this.View("Index"));
+		}
+
 		public virtual async Task<IActionResult> ConfigurationJson()
 		{
 			var jsonObject = new JObject();

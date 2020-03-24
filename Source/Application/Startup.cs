@@ -40,6 +40,8 @@ namespace Application
 				applicationBuilder.UseHsts();
 			}
 
+			applicationBuilder.UseForwardedHeaders();
+
 			//applicationBuilder.UseHttpsRedirection();
 			applicationBuilder.UseStaticFiles();
 			applicationBuilder.UseRouting();

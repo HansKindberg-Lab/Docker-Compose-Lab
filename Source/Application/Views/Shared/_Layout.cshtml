@@ -25,6 +25,9 @@
 								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
 							</li>
 							<li class="nav-item">
+								<a class="nav-link text-dark" asp-controller="Home" asp-action="Certificate">Certificate</a>
+							</li>
+							<li class="nav-item">
 								<a class="nav-link text-dark" asp-controller="Home" asp-action="ConfigurationJson">ConfigurationJson</a>
 							</li>
 							<li class="nav-item">
@@ -38,6 +41,32 @@
 		<div class="container">
 			<main role="main" class="pb-3">
 				@RenderBody()
+				<h2>Context-information</h2>
+				<h3>Client-certificate</h3>
+				@if(Context.Connection.ClientCertificate != null)
+				{
+					<p>@Context.Connection.ClientCertificate.Subject</p>
+				}
+				else
+				{
+					<p>
+						<i>null</i>
+					</p>
+				}
+				<h3>IP & port</h3>
+				<ul>
+					<li>LocalIpAddress: <strong>@Context.Connection.LocalIpAddress</strong></li>
+					<li>LocalPort: <strong>@Context.Connection.LocalPort</strong></li>
+					<li>RemoteIpAddress: <strong>@Context.Connection.RemoteIpAddress</strong></li>
+					<li>RemotePort: <strong>@Context.Connection.RemotePort</strong></li>
+				</ul>
+				<h3>Request-headers</h3>
+				<ul>
+					@foreach(var key in Context.Request.Headers.Keys.OrderBy(key => key))
+					{
+						<li>@key: <strong>@Context.Request.Headers[key]</strong></li>
+					}
+				</ul>
 			</main>
 		</div>
 
