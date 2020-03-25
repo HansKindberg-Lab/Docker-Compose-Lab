@@ -27,6 +27,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Settings", "Settings", "{62
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{9CA49BFA-A2FC-4A00-8351-E3386D7B959F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apache", "Apache", "{B02F1085-4F14-4574-9AF5-C4282C75EA43}"
+	ProjectSection(SolutionItems) = preProject
+		Apache\apache.conf = Apache\apache.conf
+		Apache\Dockerfile = Apache\Dockerfile
+		Apache\ReadMe.md = Apache\ReadMe.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Certificates", "Certificates", "{A73357D7-6A3E-47F2-A9A3-8662469AFFC6}"
+	ProjectSection(SolutionItems) = preProject
+		Apache\Certificates\ReadMe.md = Apache\Certificates\ReadMe.md
+		Apache\Certificates\ssl-certificate.crt = Apache\Certificates\ssl-certificate.crt
+		Apache\Certificates\ssl-certificate.key = Apache\Certificates\ssl-certificate.key
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +65,7 @@ Global
 		{931597CE-DD6E-4612-998E-DAFCBE58356F} = {5925A9CB-F478-4991-9860-50E2FD0E8A78}
 		{EBF480FB-97D8-4EA0-AA01-9C66D2E7C354} = {5925A9CB-F478-4991-9860-50E2FD0E8A78}
 		{629333D4-903B-4DB2-829D-E4DF6BB59EF1} = {5925A9CB-F478-4991-9860-50E2FD0E8A78}
+		{A73357D7-6A3E-47F2-A9A3-8662469AFFC6} = {B02F1085-4F14-4574-9AF5-C4282C75EA43}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C12D013-EEB0-45C5-893B-8EEFB2F0C7A0}

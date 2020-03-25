@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  application:
+    depends_on:
+      - nginx
+    image: "hanskindberg/application:latest"
+    ports:
+      - "80"
+    restart: always
+  nginx:
+    image: nginx
+    ports:
+      - "44399:443"
+    restart: always
