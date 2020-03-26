@@ -1,5 +1,12 @@
 # Docker-Compose-Lab
 
+This is a docker compose lab with apache and asp.net core. The apache is a proxy for the asp.net core application. I have choosed apache because as I understand you can set up path-specific MTLS with it. Path-specific MTLS is what I would like to accomplish in another project of mine.
+
+The environment and requirements for this project:
+
+- Environment: **Windows 10**
+- Requirements: **Docker Desktop**
+
 ## 1 Create local registry to push your images to
 
  - [Deploy a registry server](https://docs.docker.com/registry/deploying/)
@@ -24,6 +31,8 @@ Stop your registry and remove all data
 
 ## 3 Apache image
 
+- [Read more](/Source/Apache/ReadMe.md)
+
 At the command-prompt, change directory to *C:\Data\Projects\HansKindberg-Lab\Docker-Compose-Lab\Source**
 
 	docker build . -f Apache/Dockerfile -t apache:latest -t localhost:5555/apache:latest -t yourdockerusername/apache:latest
@@ -33,6 +42,10 @@ At the command-prompt, change directory to *C:\Data\Projects\HansKindberg-Lab\Do
 	docker login yourdockerusername
 
 	docker push yourdockerusername/apache:latest
+
+If you want to run it (the -h parameter is to avoid ServerName warnings)
+
+	docker run -h my.apache.com --name apache -p 8099:80 apache:latest
 
 ## 4 Application image
 
@@ -56,6 +69,7 @@ At the command-prompt, change directory to *C:\Data\Projects\HansKindberg-Lab\Do
 
 ## Temporary links
 
+- [Authenticate proxy with apache](https://docs.docker.com/registry/recipes/apache/)
 - https://jennylaw.azurewebsites.net/posts/nginx-in-app-service/
 - Google: azure linux container nginx
 - https://docs.microsoft.com/en-us/azure/container-instances/container-instances-container-group-ssl
