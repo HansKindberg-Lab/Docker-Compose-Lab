@@ -32,4 +32,4 @@ Then I have googled for setting upp ssl, proxy and mtls.
 
 ## Certificates
 
-- [Read more](/Source/Apache/Certificates/ReadMe.md)
+- [Read more](/.Global/Certificates/ReadMe.md)

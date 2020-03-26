@@ -69,6 +69,7 @@ At the command-prompt, change directory to *C:\Data\Projects\HansKindberg-Lab\Do
 
 ## Temporary links
 
+- https://stackoverflow.com/questions/53062504/apache-2-4-37-with-openssl-1-1-1-cannot-perform-post-handshake-authentication
 - [Apache HTTP 2.4: How to Build a Docker Image for SSL/TLS Mutual Authentication](https://dzone.com/articles/apache-http-24-how-to-build-a-docker-image-for-ssl)
 - [Authenticate proxy with apache](https://docs.docker.com/registry/recipes/apache/)
 - https://jennylaw.azurewebsites.net/posts/nginx-in-app-service/
