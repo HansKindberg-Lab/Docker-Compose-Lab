@@ -16,16 +16,17 @@ Get the default config
 
 ## apache.conf
 
-This is just a reminder how I came up with the apache.conf file as a "newbie". I like manually merged these two:
+This is just a reminder how I came up with the apache.conf file as a "newbie". I, like, manually merged these three:
 
 - https://cwiki.apache.org/confluence/display/HTTPD/Minimal+Config
 - the default httpd.conf when starting a container from the https://hub.docker.com/_/httpd image
+- the default httpd-ssl.conf when starting a container from the https://hub.docker.com/_/httpd image
 
 If you run the following command you start a container with the https://hub.docker.com/_/httpd image:
 
 	docker run -h my.httpd.com --name httpd -p 8099:80 httpd:latest
 
-When the container is started you have the default /usr/local/apache2/conf/httpd.conf.
+When the container is started you have the default /usr/local/apache2/conf/httpd.conf and the default /usr/local/apache2/conf/extra/httpd-ssl.conf
 
 Then I have googled for setting upp ssl, proxy and mtls.
 

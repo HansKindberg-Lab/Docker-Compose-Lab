@@ -30,6 +30,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apache", "Apache", "{B02F1085-4F14-4574-9AF5-C4282C75EA43}"
 	ProjectSection(SolutionItems) = preProject
 		Apache\apache.conf = Apache\apache.conf
+		Apache\default-httpd-ssl-without-comments.conf = Apache\default-httpd-ssl-without-comments.conf
+		Apache\default-httpd-ssl.conf = Apache\default-httpd-ssl.conf
+		Apache\default-httpd-without-comments.conf = Apache\default-httpd-without-comments.conf
+		Apache\default-httpd.conf = Apache\default-httpd.conf
 		Apache\Dockerfile = Apache\Dockerfile
 		Apache\ReadMe.md = Apache\ReadMe.md
 	EndProjectSection

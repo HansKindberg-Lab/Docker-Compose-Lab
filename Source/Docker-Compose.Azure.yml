@@ -1,15 +1,15 @@
 version: "3.7"
 
 services:
-  application:
-    depends_on:
-      - nginx
-    image: "hanskindberg/application:latest"
+  apache:
+    container_name: apache
+    image: "apache:latest"
     ports:
-      - "5555"
+      - "443:443"
     restart: always
-  nginx:
-    image: nginx
-    ports:
-      - "443"
+  application:
+    container_name: application
+    depends_on:
+      - apache
+    image: "application:latest"
     restart: always
