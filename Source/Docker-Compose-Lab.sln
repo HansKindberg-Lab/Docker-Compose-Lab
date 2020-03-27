@@ -7,21 +7,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Global", ".Global", "{5925
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Certificates", "Certificates", "{8A76858A-E868-41A9-BDBF-DCAF6A44B7DF}"
 	ProjectSection(SolutionItems) = preProject
-		..\.Global\Certificates\Certificate-Module.psm1 = ..\.Global\Certificates\Certificate-Module.psm1
-		..\.Global\Certificates\Create-Certificates.ps1 = ..\.Global\Certificates\Create-Certificates.ps1
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Client.cer = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Client.cer
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Client.crt = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Client.crt
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Client.key = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Client.key
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Client.pfx = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Client.pfx
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Root CA.cer = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Root CA.cer
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Root CA.crt = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Root CA.crt
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Root CA.key = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Root CA.key
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Root CA.pfx = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - Root CA.pfx
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - SSL.cer = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - SSL.cer
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - SSL.crt = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - SSL.crt
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - SSL.key = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - SSL.key
-		..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - SSL.pfx = ..\.Global\Certificates\Hans Kindberg - Docker Compose Lab - SSL.pfx
-		..\.Global\Certificates\ReadMe.md = ..\.Global\Certificates\ReadMe.md
+		Certificates\Certificate-Module.psm1 = Certificates\Certificate-Module.psm1
+		Certificates\Create-Certificates.ps1 = Certificates\Create-Certificates.ps1
+		Certificates\Hans Kindberg - Docker Compose Lab - Client.cer = Certificates\Hans Kindberg - Docker Compose Lab - Client.cer
+		Certificates\Hans Kindberg - Docker Compose Lab - Client.crt = Certificates\Hans Kindberg - Docker Compose Lab - Client.crt
+		Certificates\Hans Kindberg - Docker Compose Lab - Client.key = Certificates\Hans Kindberg - Docker Compose Lab - Client.key
+		Certificates\Hans Kindberg - Docker Compose Lab - Client.pfx = Certificates\Hans Kindberg - Docker Compose Lab - Client.pfx
+		Certificates\Hans Kindberg - Docker Compose Lab - Root CA.cer = Certificates\Hans Kindberg - Docker Compose Lab - Root CA.cer
+		Certificates\Hans Kindberg - Docker Compose Lab - Root CA.crt = Certificates\Hans Kindberg - Docker Compose Lab - Root CA.crt
+		Certificates\Hans Kindberg - Docker Compose Lab - Root CA.key = Certificates\Hans Kindberg - Docker Compose Lab - Root CA.key
+		Certificates\Hans Kindberg - Docker Compose Lab - Root CA.pfx = Certificates\Hans Kindberg - Docker Compose Lab - Root CA.pfx
+		Certificates\Hans Kindberg - Docker Compose Lab - SSL.cer = Certificates\Hans Kindberg - Docker Compose Lab - SSL.cer
+		Certificates\Hans Kindberg - Docker Compose Lab - SSL.crt = Certificates\Hans Kindberg - Docker Compose Lab - SSL.crt
+		Certificates\Hans Kindberg - Docker Compose Lab - SSL.key = Certificates\Hans Kindberg - Docker Compose Lab - SSL.key
+		Certificates\Hans Kindberg - Docker Compose Lab - SSL.pfx = Certificates\Hans Kindberg - Docker Compose Lab - SSL.pfx
+		Certificates\ReadMe.md = Certificates\ReadMe.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{03E0CECC-7A50-4AA7-A970-304F5BB31956}"
@@ -55,8 +55,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apache", "Apache", "{B02F10
 		Apache\default-httpd.conf = Apache\default-httpd.conf
 		Apache\Dockerfile = Apache\Dockerfile
 		Apache\ReadMe.md = Apache\ReadMe.md
-		Apache\ssl-certificate.crt = Apache\ssl-certificate.crt
-		Apache\ssl-certificate.key = Apache\ssl-certificate.key
 	EndProjectSection
 EndProject
 Global
@@ -78,12 +76,12 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{8A76858A-E868-41A9-BDBF-DCAF6A44B7DF} = {5925A9CB-F478-4991-9860-50E2FD0E8A78}
 		{03E0CECC-7A50-4AA7-A970-304F5BB31956} = {5925A9CB-F478-4991-9860-50E2FD0E8A78}
 		{1425E1A9-E1D5-4927-A6D6-34876DB97C06} = {03E0CECC-7A50-4AA7-A970-304F5BB31956}
 		{931597CE-DD6E-4612-998E-DAFCBE58356F} = {5925A9CB-F478-4991-9860-50E2FD0E8A78}
 		{EBF480FB-97D8-4EA0-AA01-9C66D2E7C354} = {5925A9CB-F478-4991-9860-50E2FD0E8A78}
 		{629333D4-903B-4DB2-829D-E4DF6BB59EF1} = {5925A9CB-F478-4991-9860-50E2FD0E8A78}
-		{8A76858A-E868-41A9-BDBF-DCAF6A44B7DF} = {5925A9CB-F478-4991-9860-50E2FD0E8A78}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C12D013-EEB0-45C5-893B-8EEFB2F0C7A0}
