@@ -1,5 +1,53 @@
 # Docker-Compose-Lab
 
+
+
+## TEMPORARY - BEGIN
+
+docker build . -f Apache/Dockerfile -t apache:latest
+docker build . -f Application/Dockerfile -t application:latest
+
+docker-compose -f "Docker-Compose.Azure.yml" up -d
+
+
+
+
+
+
+docker run -h localhost --name apache -p 44399:443 apache:latest
+
+docker run -h localhost --name apache -p 443:443 apache:latest
+
+docker run --name apache -p 443:443 apache:latest
+
+docker-compose -f "Docker-Compose.Azure.yml" up -d
+
+docker run -h my.apache.com --name apache -p 8099:80 apache:latest
+
+docker run -h my.httpd.com --name httpd -p 8099:80 httpd:latest
+
+https://localhost:443
+
+http://localhost:8099
+
+## TEMPORARY - END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This is a docker compose lab with apache and asp.net core. The apache is a proxy for the asp.net core application. I have choosed apache because as I understand you can set up path-specific MTLS with it. Path-specific MTLS is what I would like to accomplish in another project of mine.
 
 The environment and requirements for this project:
